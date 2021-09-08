@@ -2,6 +2,9 @@
 
 ## 存取範圍層級
 
+**類別預設的存取修飾詞是 internal**
+**類別成員預設的存取修飾詞是 private**
+
 ### public: 存取不受限制
 
 #### Example 1.  
@@ -72,8 +75,9 @@ a.radius會出現錯誤，**無法經由類型 'Circle' 的限定詞，來存取
   
 ### private: 存取僅限於此類別主體或結構主體內。
 
-因radius宣告為private存取權限，因此需透過public方法GetRadius()進行存取。
-    class Program:Circle
+因radius宣告為private存取權限，因此需透過public方法GetRadius()進行存取。  
+  
+    class Program
     {
         static void Main(string[] args)
         {
@@ -87,7 +91,10 @@ a.radius會出現錯誤，**無法經由類型 'Circle' 的限定詞，來存取
         private int radius=123;
         public int GetRadius() => this.radius;
     }
-    
+
+### internal: 存取範圍是相同組件(Assembly)都可以使用，internal可以在同一個dll內存取。
+
+
 
 
 ## const 跟 static readonly 差別
