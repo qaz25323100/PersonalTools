@@ -1,5 +1,26 @@
 # C#
 
+## 存取範圍層級
+
+public: 存取不受限制
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Circle c = new Circle();
+            
+            Console.WriteLine(c.radius);
+        }
+    }
+    class Circle
+    {
+        public int radius=3; //如果把public 改為protected或private會出現 'Circle.radius' 由於其保護層級之故，所以無法存取。
+    }
+
+
+
+
 ## const 跟 static readonly 差別
 
 const 是編譯時賦予值，static readonly 是執行時賦予值
