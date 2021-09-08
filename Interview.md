@@ -4,7 +4,7 @@
 
 ### public: 存取不受限制
 
-如把public 改為protected或private會出現 ** 'Circle.radius' 由於其保護層級之故，所以無法存取。 **
+如把public 改為protected或private會出現 **'Circle.radius' 由於其保護層級之故，所以無法存取。 **
 
     class Program
     {
