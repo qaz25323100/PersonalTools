@@ -2,7 +2,9 @@
 
 ## 存取範圍層級
 
-public: 存取不受限制
+### public: 存取不受限制
+
+如把public 改為protected或private會出現 'Circle.radius' 由於其保護層級之故，所以無法存取。
 
     class Program
     {
@@ -15,7 +17,7 @@ public: 存取不受限制
     }
     class Circle
     {
-        public int radius=3; //如果把public 改為protected或private會出現 'Circle.radius' 由於其保護層級之故，所以無法存取。
+        public int radius=3;
     }
 
 
