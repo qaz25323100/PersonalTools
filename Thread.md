@@ -180,3 +180,9 @@ Output
         }
 
     }
+  Output
+    
+    [7]
+    [6]
+    [7] Current Item:1
+    [6] Current Item:2
