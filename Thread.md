@@ -138,3 +138,45 @@ Output
     [6]
     [6] Current Item:2
     [5] Current Item:2
+
+## 鎖(Lock)  
+
+為解決上述共享變數問題，因此透過互斥鎖(exclusive lock)  
+迫使各執行緒存取共享變數時乖乖排隊，亦即令它們同步化（synchronization）。  
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            new ShareState().Run();
+        }
+    }
+
+    public class ShareState
+    {
+        private int item = 0;
+
+        private object locker = new Object(); // 用於獨佔鎖定的物件
+        public void Run()
+        {
+            var t1 = new Thread(AddItem);
+            var t2 = new Thread(AddItem);
+
+            t1.Start(300);
+            t2.Start(100);
+        }
+
+        private void AddItem(object Delay)
+        {
+            Console.WriteLine("[" + Thread.CurrentThread.ManagedThreadId + "]");
+
+            lock (locker)
+            {
+                item++;
+
+                Thread.Sleep((int)Delay);
+                Console.WriteLine("[" + Thread.CurrentThread.ManagedThreadId + "] Current Item:" + item);
+            }
+        }
+
+    }
