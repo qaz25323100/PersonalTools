@@ -52,3 +52,7 @@
             }
         }
     }
+** 
+    public delegate void ThreadStart();  
+    public delegate void ParameterizedThreadStart(object? obj);  
+**
