@@ -98,7 +98,6 @@ Output
 ## Thread共享共同參數  
 
 兩個執行序都有用到ShareState中的item這個變數...  
-程式中為了模擬實際情況，t1延遲時間及t2延遲時間不盡相同  
   
     class Program
     {
@@ -120,15 +119,21 @@ Output
         }
 
         private void AddItem(object Delay){
+            Console.WriteLine("["+Thread.CurrentThread.ManagedThreadId+"]");
             item++;
 
             Thread.Sleep((int)Delay);
             Console.WriteLine("["+Thread.CurrentThread.ManagedThreadId+"] Current Item:"+ item);
         }
 
-    }  
+    }
   
 Output  
+  1.t1先進入AddItem執行item++，延遲了300ms
+  2.t1此時延遲的當下，t2也執行了AddItem也執行了item++，
   
+
+    [5]
+    [6]
     [6] Current Item:2
     [5] Current Item:2
