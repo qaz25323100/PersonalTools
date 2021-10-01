@@ -129,8 +129,9 @@ Output
     }
   
 Output  
-  1.t1先進入AddItem執行item++，延遲了300ms
-  2.t1此時延遲的當下，t2也執行了AddItem也執行了item++，
+1.t1先進入AddItem執行item++，延遲了300ms  
+2.t1此時延遲的當下，t2也執行了AddItem也執行了item++，並執行延遲100ms
+3.t2延遲完，執行WriteLine，爾後，t1延遲完，執行WriteLine
   
 
     [5]
