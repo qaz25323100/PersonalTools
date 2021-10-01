@@ -76,7 +76,7 @@
             b.Join();
             c.Join();
 
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.Write(".");
             }
@@ -84,13 +84,13 @@
 
         static void PrintNum(object p)
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(p);
+                Console.Write(p);
             }
         }
     }
   
 Output  
-    
-    aaaaaaaccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+  
+    bbbbbaaaaaccccc.....
