@@ -52,7 +52,7 @@
             }
         }
     }
-### 差別在Thread建構式定義不同(ThreadStart V.S ParameterizedThreadStart)
+### Thread有無參數(ThreadStart V.S ParameterizedThreadStart)
     public delegate void ThreadStart();  
     public delegate void ParameterizedThreadStart(object? obj);  
 
