@@ -58,7 +58,8 @@
 
 ## Thread.Join()
     
-等待a、b、c執行序跑完，才跑主程式
+等待a、b、c執行序跑完，才跑主程式  
+  
     class Program
     {
         static void Main(string[] args)
