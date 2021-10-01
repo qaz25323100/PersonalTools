@@ -95,7 +95,7 @@ Output
   
     bbbbbaaaaaccccc.....
 
-## Thread共享共同參數  
+## Thread共享共同參數問題  
 
 兩個執行序都有用到ShareState中的item這個變數...  
   
