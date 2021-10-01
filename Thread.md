@@ -94,3 +94,41 @@
 Output  
   
     bbbbbaaaaaccccc.....
+
+## Thread共享共同參數  
+
+兩個執行序都有用到ShareState中的item這個變數...  
+程式中為了模擬實際情況，t1延遲時間及t2延遲時間不盡相同  
+  
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            new ShareState().Run();
+        }
+    }
+
+    public class ShareState{
+        private int item = 0;
+
+        public void Run(){
+            var t1 = new Thread(AddItem);
+            var t2 = new Thread(AddItem);
+
+            t1.Start(300);
+            t2.Start(100);
+        }
+
+        private void AddItem(object Delay){
+            item++;
+
+            Thread.Sleep((int)Delay);
+            Console.WriteLine("["+Thread.CurrentThread.ManagedThreadId+"] Current Item:"+ item);
+        }
+
+    }  
+  
+Output  
+  
+    [6] Current Item:2
+    [5] Current Item:2
