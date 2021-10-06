@@ -1,6 +1,6 @@
 ## Laravel(build in docker apache)  
   
-  ### zlib Library  
+  ### Enable zlib Library  
     
   apt install zip unzip  
   apt-get install libzip-dev  
