@@ -9,6 +9,6 @@ https://zhuanlan.zhihu.com/p/158683510
   
 可以寫作  
   
-    const plus = (num1+num2) =>{
+    const plus = (num1+num2) => {
         return num1+num2; 
     }
