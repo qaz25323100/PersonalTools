@@ -7,7 +7,7 @@ https://zhuanlan.zhihu.com/p/158683510
         return num1+num2; 
     }
   
-利用箭頭函數可以寫作  
+**利用箭頭函數可以寫作**  
   
     const plus = (num1+num2) => {
         return num1+num2; 
@@ -17,7 +17,7 @@ https://zhuanlan.zhihu.com/p/158683510
   
     const plus = (num1+num2) => num1+num2; 
 
-※※當只有一個參數的時候※※  
+**※※當只有一個參數的時候※※**  
   
     const plus = num1 => console.log(msg);
 
