@@ -17,6 +17,6 @@ https://zhuanlan.zhihu.com/p/158683510
   
     const plus = (num1+num2) => num1+num2; 
 
-※當只有一個參數的時候  
+※※當只有一個參數的時候※※  
   
     const plus = num1 => console.log(msg);
