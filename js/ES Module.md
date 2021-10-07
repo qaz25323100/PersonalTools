@@ -20,3 +20,23 @@ https://zhuanlan.zhihu.com/p/158683510
 ※※當只有一個參數的時候※※  
   
     const plus = num1 => console.log(msg);
+
+## 展開運算子(spread operator)/其餘運算子(rest operator)
+
+*展開運算子*  
+  
+    const arr = [1,2,3,4];
+    
+    const arr1 = [0, ...arr];
+    
+    console.log(arr1);
+  
+**其餘運算子**  
+    const arr = [1,2,3,4];
+    
+    const [a, ...arr1] = arr;
+    
+    console.log(arr1); // 1
+    
+    console.log(arr1); //[2,3,4]
+  
