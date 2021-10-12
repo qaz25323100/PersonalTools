@@ -1,4 +1,8 @@
+## TCP vs UDP
 
+TCP 是網際網路上最常用的協定，這種協定較為可靠
+
+UDP 不需要唯一識別碼和序號。透過串流方式進行傳輸。
 
 ## const 跟 static readonly 差別
 
