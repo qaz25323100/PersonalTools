@@ -41,3 +41,4 @@ https://zhuanlan.zhihu.com/p/158683510
     
     console.log(arr1); //[2,3,4]
   
+## const vs var vs let
