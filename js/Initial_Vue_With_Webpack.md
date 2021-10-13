@@ -11,11 +11,11 @@
     npm install webpack webpack-cli --save-dev 
   
 
-5. 設置 package.json
+5. 設置 package.json，在scripts中增加"build": "webpack"
       
       "scripts": {  
         "test": "echo \"Error: no test specified\" && exit 1",  
-        "build": "webpack" //添加  
+        "build": "webpack" //新增  
       },  
   
 # Problems
