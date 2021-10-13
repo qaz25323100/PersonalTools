@@ -12,7 +12,7 @@
   
 
 5. 設置 package.json
-  
+      
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "build": "webpack" //添加
