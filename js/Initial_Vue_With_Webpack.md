@@ -11,7 +11,12 @@
     npm install webpack webpack-cli --save-dev 
   
 
-5.
+5. 設置 package.json
+  
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack" //添加
+    },
 
 # Problems
 ## npm ERR! Error: EPERM: operation not permitted, rename
