@@ -54,7 +54,8 @@ https://zhuanlan.zhihu.com/p/158683510
         </template>
       <script>
           export default {
-           
-
+                //直接匯出Button.vue
+                //引入時 import UIButton from "./Components/Button.vue";
+                //UIButton可取任意名字
           };
       </script>
