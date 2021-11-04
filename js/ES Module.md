@@ -47,8 +47,8 @@ https://zhuanlan.zhihu.com/p/158683510
 
 兩者最大不同，在同一份檔案中export可以引入多次，而export default只能引入一次  
 
-Button.vue  
-   
+
+        //Button.vue
         <template>
             <div>
                 {{ message }}
