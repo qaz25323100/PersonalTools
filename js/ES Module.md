@@ -42,3 +42,31 @@ https://zhuanlan.zhihu.com/p/158683510
     console.log(arr1); //[2,3,4]
   
 ## const vs var vs let
+
+## export vs export default
+
+兩者最大不同，在同一份檔案中export可以引入多次，而export default只能引入一次  
+
+Button.vue  
+   
+        <template>
+            <div>
+                {{ message }}
+            </div>
+            <el-button type="primary">我是按鈕</el-button>
+
+        </template>
+        <script>
+            export default {
+              // setup () {
+              //   const state = reactive({
+              //     message: 'Vue3 gg'
+              //   })
+              //   return {
+              //     state,
+              //   }
+              // }
+              props: ['message']
+
+            };
+        </script>
