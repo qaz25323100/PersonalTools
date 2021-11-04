@@ -50,23 +50,11 @@ https://zhuanlan.zhihu.com/p/158683510
 
      //Button.vue
         <template>
-          <div>
-              {{ message }}
-          </div>
           <el-button type="primary">我是按鈕</el-button>
-
         </template>
       <script>
           export default {
-            // setup () {
-            //   const state = reactive({
-            //     message: 'Vue3 gg'
-            //   })
-            //   return {
-            //     state,
-            //   }
-            // }
-            props: ['message']
+           
 
           };
       </script>
